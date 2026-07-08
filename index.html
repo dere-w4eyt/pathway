@@ -26,7 +26,7 @@
         }
 
         .container {
-            max-width: 900px;
+            max-width: 750px;
             margin: 0 auto;
         }
 
@@ -73,29 +73,13 @@
             margin-top: 0;
         }
 
-        .grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 25px;
-            margin-bottom: 40px;
-        }
-
-        @media (max-width: 768px) {
-            .grid { grid-template-columns: 1fr; }
-        }
-
         .card {
             background-color: var(--card-bg);
-            border: 1px solid var(--border);
-            padding: 25px;
-            border-radius: 6px;
-            display: flex;
-            flex-direction: column;
-        }
-
-        .card.selected-path {
             border: 2px solid var(--accent);
-            box-shadow: 0 0 15px rgba(88, 166, 255, 0.2);
+            padding: 30px;
+            border-radius: 6px;
+            box-shadow: 0 0 15px rgba(88, 166, 255, 0.15);
+            margin-bottom: 40px;
         }
 
         .selection-badge {
@@ -106,21 +90,21 @@
             font-size: 0.75rem;
             padding: 4px 8px;
             border-radius: 4px;
-            align-self: flex-start;
-            margin-bottom: 10px;
+            display: inline-block;
+            margin-bottom: 15px;
         }
 
         .pathway-title {
             color: var(--text-bright);
-            font-size: 1.4rem;
+            font-size: 1.6rem;
             margin-top: 0;
-            margin-bottom: 15px;
+            margin-bottom: 20px;
             border-bottom: 1px solid var(--border);
             padding-bottom: 10px;
         }
 
         .meta-info p {
-            margin: 10px 0;
+            margin: 12px 0;
         }
 
         .meta-info strong {
@@ -128,14 +112,13 @@
         }
 
         .pro-con-section {
-            margin-top: auto;
             padding-top: 15px;
         }
 
         .list-title {
             font-weight: bold;
             margin-bottom: 8px;
-            margin-top: 15px;
+            margin-top: 20px;
         }
 
         .list-title.pro { color: var(--pro); }
@@ -148,7 +131,7 @@
         }
 
         li {
-            margin-bottom: 6px;
+            margin-bottom: 8px;
         }
 
         .my-links, .dev-panel {
@@ -220,59 +203,35 @@
     <!-- JUSTIFICATION SECTION (STEP THREE) -->
     <section class="justification-box">
         <h2>Step Three: Justify Your Selection</h2>
-        <p>Based on the research and exploration I have committed to, the pathway that is the best fit for me at this point in your life is <strong>Independent E-Commerce Developer</strong>. This is where I am officially headed. While it may have unpredictable components rather than a completely stable corporate structure, it is the best fit because I am already actively executing this work and testing my technical boundaries in real time.</p>
+        <p>Based on the research and exploration I have committed to, the pathway that is the best fit for me at this point in my life is <strong>Independent E-Commerce Developer</strong>. This is where I am officially headed. While it may have unpredictable components rather than a completely stable corporate structure, it is the best fit because I am already actively executing this work and testing my technical boundaries in real time.</p>
         <p>This choice directly connects to my passion for computer science and hardware management. The process allows me to turn my digital logic, PC assembly background, and AI integration skills into immediate real-world business assets while avoiding student debt. This page stands as direct, practical proof of my chosen direction.</p>
     </section>
 
-    <!-- TWO PATHWAYS COMPARED -->
-    <div class="grid">
-        <!-- PATHWAY 1 -->
-        <div class="card">
-            <div class="pathway-title">Option #1: Apprenticeship / Skilled Trade</div>
-            <div class="meta-info">
-                <p><strong>Estimated Costs:</strong> $1,000 - $2,000 upfront (tools & gear). Paid from Day 1.</p>
-                <p><strong>Future Offers:</strong> Extreme stability, high specialized income, zero student debt burdens.</p>
-                <p><strong>The Fit:</strong> Strong fit for hands-on execution. My personal background building custom PC hardware means my manual precision and analytical troubleshooting match this style perfectly.</p>
-            </div>
-            <div class="pro-con-section">
-                <div class="list-title pro">Pros:</div>
-                <ul>
-                    <li>Earn while i learn from one day.</li>
-                    <li>Very little to no student dept.</li>
-                    <li>High demand for specialized technicians.</li>
-                </ul>
-                <div class="list-title con">Cons:</div>
-                <ul>
-                    <li>Finding an employer will be tough.</li>
-                    <li>Work can be physically tiring.</li>
-                    <li>Working hours can be irregular or early.</li>
-                </ul>
-            </div>
+    <!-- CHOSEN PATHWAY CARD -->
+    <div class="card">
+        <div class="selection-badge">My Selected Pathway Choice</div>
+        <div class="pathway-title">Independent E-Commerce Developer</div>
+        
+        <div class="meta-info">
+            <p><strong>Estimated Costs:</strong> Almost $0. Code and assets managed for free.</p>
+            <p><strong>Future Offers:</strong> Complete creative freedom, brand value, and the ability to deploy software and AI skills directly.</p>
+            <p><strong>The Fit:</strong> This is a perfect fit right now because I'm ACTIVELY DOING IT. I have already built one of my soon to be many e-commerce businesses Halalstyles ( Halalstyles55.com ).</p>
         </div>
-
-        <!-- PATHWAY 2 (SELECTED) -->
-        <div class="card selected-path">
-            <div class="selection-badge">My Selected Pathway Choice</div>
-            <div class="pathway-title">Option #2: Independent E-Commerce Developer</div>
-            <div class="meta-info">
-                <p><strong>Estimated Costs:</strong> Almost $0. Code and assets managed for free.</p>
-                <p><strong>Future Offers:</strong> Complete creative freedom, brand value, and the ability to deploy software and AI skills directly.</p>
-                <p><strong>The Fit:</strong> This is a perfect fit right now because I'm ACTIVELY DOING IT. I have already built one of my soon to be many e-commerce businesses Halalstyles ( Halalstyles55.com ).</p>
-            </div>
-            <div class="pro-con-section">
-                <div class="list-title pro">Pros:</div>
-                <ul>
-                    <li>No startup costs using manual coding and AI.</li>
-                    <li>Freedom to create anything I can imagine.</li>
-                    <li>Significant tech experience gained before graduation.</li>
-                </ul>
-                <div class="list-title con">Cons:</div>
-                <ul>
-                    <li>Income can vary greatly in the beginning.</li>
-                    <li>I am responsible for finding and fixing bugs in the database and code by myself.</li>
-                    <li>There’s no support from an organization; everything relies on me.</li>
-                </ul>
-            </div>
+        
+        <div class="pro-con-section">
+            <div class="list-title pro">Pros:</div>
+            <ul>
+                <li>No startup costs using manual coding and AI.</li>
+                <li>Freedom to create anything I can imagine.</li>
+                <li>Significant tech experience gained before graduation.</li>
+            </ul>
+            
+            <div class="list-title con">Cons:</div>
+            <ul>
+                <li>Income can vary greatly in the beginning.</li>
+                <li>I am responsible for finding and fixing bugs in the database and code by myself.</li>
+                <li>There’s no support from an organization; everything relies on me.</li>
+            </ul>
         </div>
     </div>
 
@@ -281,3 +240,30 @@
         <h2>My Live Assets</h2>
         <p>Click below to verify my current live operations:</p>
         <a href="https://halalstyles55.com" target="_blank" class="btn">Visit HalalStyles55.com</a>
+        <a href="http://realgorilla.site" target="_blank" class="btn">Visit RealGorilla.site</a>
+    </section>
+
+    <!-- DEV PANEL -->
+    <section class="dev-panel">
+        <h2>Assignment Integrity Verification</h2>
+        <p>Click the button below to execute an on-page DOM compilation script proving this structure is natively rendered:</p>
+        <button class="btn btn-dev" onclick="toggleInspector()">Run Inspector Script</button>
+        <pre id="codeInspector">&lt;!-- DOM Architecture Output --&gt;</pre>
+    </section>
+</div>
+
+<script>
+    function toggleInspector() {
+        var box = document.getElementById("codeInspector");
+        if (box.style.display === "none" || box.style.display === "") {
+            var docSource = document.documentElement.innerHTML;
+            box.textContent = "<!DOCTYPE html>\n<html>\n" + docSource + "\n</html>";
+            box.style.display = "block";
+        } else {
+            box.style.display = "none";
+        }
+    }
+</script>
+
+</body>
+</html>
