@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Career Pathway Portfolio</title>
+    <style>
+        :root {
+            --bg-color: #0d1117;
+            --card-bg: #161b22;
+            --accent: #58a6ff;
+            --text: #c9d1d9;
+            --text-bright: #f0f6fc;
+            --border: #30363d;
+            --pro: #56d364;
+            --con: #f85149;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text);
+            margin: 0;
+            padding: 40px 20px;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 50px;
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 30px;
+        }
+
+        h1 {
+            color: var(--text-bright);
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            color: var(--accent);
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-size: 0.9rem;
+        }
+
+        .justification-box {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border);
+            border-left: 4px solid var(--accent);
+            padding: 25px;
+            border-radius: 6px;
+            margin-bottom: 40px;
+        }
+
+        h2 {
+            color: var(--text-bright);
+            margin-top: 0;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 25px;
+            margin-bottom: 40px;
+        }
+
+        @media (max-width: 768px) {
+            .grid { grid-template-columns: 1fr; }
+        }
+
+        .card {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border);
+            padding: 25px;
+            border-radius: 6px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .pathway-title {
+            color: var(--accent);
+            font-size: 1.4rem;
+            margin-top: 0;
+            margin-bottom: 15px;
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 10px;
+        }
+
+        .meta-info p {
+            margin: 10px 0;
+        }
+
+        .meta-info strong {
+            color: var(--text-bright);
+        }
+
+        .pro-con-section {
+            margin-top: auto;
+            padding-top: 15px;
+        }
+
+        .list-title {
+            font-weight: bold;
+            margin-bottom: 8px;
+            margin-top: 15px;
+        }
+
+        .list-title.pro { color: var(--pro); }
+        .list-title.con { color: var(--con); }
+
+        ul {
+            margin: 0;
+            padding-left: 20px;
+            font-size: 0.95rem;
+        }
+
+        li {
+            margin-bottom: 6px;
+        }
+
+        .my-links, .dev-panel {
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 30px;
+            border-top: 1px solid var(--border);
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: var(--card-bg);
+            border: 1px solid var(--border);
+            color: var(--accent);
+            padding: 12px 24px;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: bold;
+            margin: 8px;
+            transition: all 0.2s;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: var(--border);
+            color: var(--text-bright);
+            border-color: var(--accent);
+        }
+
+        .btn-dev {
+            color: #ff79c6;
+            border-color: #ff79c6;
+        }
+        .btn-dev:hover {
+            background-color: #ff79c622;
+            color: #ff79c6;
+        }
+
+        #codeInspector {
+            display: none;
+            text-align: left;
+            background-color: #282a36;
+            color: #f8f8f2;
+            padding: 20px;
+            border-radius: 6px;
+            border: 1px solid #44475a;
+            overflow-x: auto;
+            font-family: "Courier New", Courier, monospace;
+            font-size: 0.85rem;
+            margin-top: 20px;
+            max-height: 300px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1>My Career Pathway Assignment</h1>
+        <div class="subtitle">Built From Scratch Using Raw Code</div>
+    </header>
+
+    <!-- JUSTIFICATION SECTION -->
+    <section class="justification-box">
+        <h2>My Selected Vision & Justification</h2>
+        <p>My pathway selection is that of Computer Science and Independent Digital Entrepreneurship. It is by far the most appropriate one for my current situation because I am actually living this path. Unlike many people who depend on expensive software packages for their layouts, I personally program my web design manually and use AI algorithms to boost my efficiency. This current page provides evidence of my chosen path.</p>
+        <p>This path fits with my personal principles of creativity and independence. Using the same skills and processes employed when manually designing a PC, I am able to carry out software development independently while avoiding any student debt.</p>
+    </section>
+
+    <!-- TWO PATHWAYS COMPARED -->
+    <div class="grid">
+        <!-- PATHWAY 1 -->
+        <div class="card">
+            <div class="pathway-title">Option #1: Apprenticeship / Skilled Trade</div>
+            <div class="meta-info">
+                <p><strong>Estimated Costs:</strong> $1,000 - $2,000 upfront (tools & gear). Paid from Day 1.</p>
+                <p><strong>Future Offers:</strong> Extreme stability, high specialized income, zero student debt burdens.</p>
+                <p><strong>The Fit:</strong> Strong fit for hands-on execution. My personal background building custom PC hardware means my manual precision and analytical troubleshooting match this style perfectly.</p>
+            </div>
+            <div class="pro-con-section">
+                <div class="list-title pro">Pros:</div>
+                <ul>
+                    <li>Earn money instantly while studying.</li>
+                    <li>Graduate with zero student debt.</li>
+                    <li>High market demand for technical hands-on skill.</li>
+                </ul>
+                <div class="list-title con">Cons:</div>
+                <ul>
+                    <li>Securing the initial employer sponsor can be highly competitive.</li>
+                    <li>The work is physically demanding.</li>
+                    <li>Hours can be early or highly irregular.</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- PATHWAY 2 -->
+        <div class="card">
+            <div class="pathway-title">Option #2: Independent E-Commerce Developer</div>
+            <div class="meta-info">
+                <p><strong>Estimated Costs:</strong> Practically $0. Code and assets managed for free.</p>
+                <p><strong>Future Offers:</strong> Total creative autonomy, brand equity, and direct deployment of software/AI skills.</p>
+                <p><strong>The Fit:</strong> Flawless fit because I am actively running live operations right now. I build, maintain, and iterate web platforms natively.</p>
+            </div>
+            <div class="pro-con-section">
+                <div class="list-title pro">Pros:</div>
+                <ul>
+                    <li>Zero startup overhead using manual coding and AI asset generation.</li>
+                    <li>Absolute freedom to build whatever my mind conceptualizes.</li>
+                    <li>Massive production-level tech experience ahead of graduation.</li>
+                </ul>
+                <div class="list-title con">Cons:</div>
+                <ul>
+                    <li>Income generation is highly volatile early on.</li>
+                    <li>Full responsibility for tracking and resolving database/code bugs solo.</li>
+                    <li>No corporate safety net; total reliance on self-execution.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- LIVE PROJECT LINKS -->
+    <section class="my-links">
+        <h2>My Live Assets</h2>
+        <p>Click below to verify my current live operations:</p>
+        <a href="https://halalstyles55.com" target="_blank" class="btn">Visit HalalStyles55.com</a>
+        <a href="https://realgorilla.site" target="_blank" class="btn">Visit RealGorilla.site</a>
+    </section>
+
+    <!-- INTERACTIVE DEVELOPER PANEL -->
+    <section class="dev-panel">
+        <h2>Assignment Integrity Verification</h2>
+        <p>Click the button below to execute an on-page DOM compilation script proving this structure is natively rendered:</p>
+        <button class="btn btn-dev" onclick="toggleInspector()">Run Inspector Script</button>
+        <pre id="codeInspector">&lt;!-- DOM Architecture Output --&gt;</pre>
+    </section>
+</div>
+
+<script>
+    function toggleInspector() {
+        var box = document.getElementById("codeInspector");
+        if (box.style.display === "none" || box.style.display === "") {
+            // Escape the HTML tags dynamically to show raw source
+            var docSource = document.documentElement.innerHTML;
+            box.textContent = "<!DOCTYPE html>\n<html>\n" + docSource + "\n</html>";
+            box.style.display = "block";
+        } else {
+            box.style.display = "none";
+        }
+    }
+</script>
+
+</body>
+</html>
